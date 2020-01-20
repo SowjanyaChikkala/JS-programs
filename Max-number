@@ -1,0 +1,11 @@
+function maxnum()
+{
+let max=0;
+for(let i=0;i<5;i++)
+{
+let num=prompt("Enter a number");
+max=Math.max(max,num)
+}
+console.log(max);
+}
+maxnum();
