@@ -1,0 +1,7 @@
+function date()
+{
+var a=prompt("Enter Date");
+var b=new Date(a)
+console.log(b);
+}
+date();
