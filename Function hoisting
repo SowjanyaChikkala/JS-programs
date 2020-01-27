@@ -1,0 +1,19 @@
+var a=10;
+function test()
+{
+var a;
+console.log(a);//function a()
+function a()
+{
+console.log('hii');
+}
+a();//hii
+function add()
+{
+let a=2,b=3
+console.log(a+b);//5
+}
+add();
+}
+test();
+console.log(a)//10;
