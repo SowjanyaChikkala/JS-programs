@@ -1,0 +1,11 @@
+function add()
+{
+let x=2,y=5
+console.log(n1+n2);//error n1,n2 not defined.
+function num()
+{
+let n1=2,n2=3;
+}
+num();
+}
+add();
