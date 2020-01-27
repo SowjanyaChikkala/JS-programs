@@ -1,0 +1,8 @@
+function test()
+{
+console.log(x);//reference error
+console.log(y);//reference error
+let x=10;
+const y=2;
+}
+test()
