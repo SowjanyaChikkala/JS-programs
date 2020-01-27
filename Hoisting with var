@@ -1,0 +1,13 @@
+function test()
+{
+console.log(x);//undefined
+console.log(y);//undefined
+var x=10;
+var y=2;
+function add()
+{
+console.log(x+y);//12
+}
+add();
+}
+test();
