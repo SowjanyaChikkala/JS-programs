@@ -1,0 +1,14 @@
+function test()
+{
+a();//aaa
+b();//b is not a function.
+function a()
+{
+console.log("aaa");
+}
+var b=function()
+{
+console.log(b);
+}
+}
+test();
