@@ -1,0 +1,12 @@
+function task(x)
+{
+var arr=new Array();
+for(let i=0;i<x.length;i++)
+{
+var c=Object.entries(x[i])
+arr[i]=c[0]
+}
+
+console.log(Object.assign({},arr));
+}
+task(b);
