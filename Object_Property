@@ -1,0 +1,29 @@
+var b=
+[
+{person1: '1' , garbageA: 'garbage'},
+{person2: '2' , garbageB: 'garbage'},
+{person3: '3' , garbageC: 'garbage'},
+{garbageD: 'garbage' , person4: '4'},
+{person5: '5' , garbageE: 'garbage'},
+{person6: '6' , garbageF: 'garbage'},
+{person7: '7' , garbageG: 'garbage'},
+{person8: '8' , garbageH: 'garbage'}
+]
+
+function task(x)
+{
+var arr=new Array();
+for(let i=0;i<x.length;i++)
+{
+var c=Object.entries(x[i])
+for(let j=0;j<c.length;j++)
+{
+if(c[j][0]==`person${i+1}`)
+{
+arr[i]=c[j]
+}
+}
+}
+console.log(Object.fromEntries(arr));
+}
+task(b);
