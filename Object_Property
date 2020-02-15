@@ -1,13 +1,16 @@
-function task(b){
-var arr=[];
-var c=b.map(ele=>Object.entries(ele))
-var re=/person[0-9]/i,i=0 ;
-let v=c.map(ele=>{ele.forEach(x=>{if(re.test(x))
-{
-arr[i]=x;
-i=i+1;
-}
+var b=
+[
+{person1: '1' , garbageA: 'garbage'},
+{person2: '2' , garbageB: 'garbage'},
+{person3: '3' , garbageC: 'garbage'},
+{person4: '4' , garbageD: 'garbage'},
+{person5: '5' , garbageE: 'garbage'},
+{person6: '6' , garbageF: 'garbage'},
+{person7: '7' , garbageG: 'garbage'},
+{person8: '8' , garbageH: 'garbage'}
+]
+var c=b.reduce((acc,cur)=>{
+return d= Object.assign(acc,cur)
 })
-})
-console.log(Object.fromEntries(arr));
-}
+Object.keys(d).map((x)=>{d[x]=="garbage"?delete d[x]:1})
+console.log(d);
