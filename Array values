@@ -7,7 +7,7 @@ if(typeof x==='number')
 {
 (x>0)?p++:(x<0)?n++:z++
 }})
-console.log("positive values :"+p)
-console.log("negative values:"+n)
-console.log("zero values:"+z)
+console.log("positive values :"+p/arr.length)
+console.log("negative values:"+n/arr.length)
+console.log("zero values:"+z/arr.length)
 }
