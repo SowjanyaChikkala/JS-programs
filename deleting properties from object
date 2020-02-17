@@ -1,0 +1,11 @@
+function removeGarbage(obj) {
+ var ans=obj.reduce((acc,cur)=>{
+    let result = Object.assign(acc,cur);
+    let keys = Object.keys(acc).forEach(val =>{
+      if(val.includes('garbage')){
+        delete result[val]
+      }
+    });
+    return result
+  })
+}
