@@ -1,0 +1,28 @@
+function Engine(sz,pow)
+{
+this.size=sz
+this.power=pow
+this.start=function(){
+console.log("start")
+}
+this.stop=function()
+{
+console.log("stop")}}
+function Wheels(ct,isf){
+this.count=ct
+this.isfunctioning=isf;
+this.gofront=function(){
+console.log("goo")}
+this.goback=function(){
+console.log("back")
+}}
+function Car(sz,pow,ct,isf,id){
+Engine.call(this,sz,pow)
+Wheels.call(this,ct,isf)
+this.id=id
+var drive=function(){
+console.log("driving")
+}
+}
+Object.assign(Car.prototype,Wheels.prototype,Engine.prototype)
+var car=new Car(23,345,2,true,4566)
