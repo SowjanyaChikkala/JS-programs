@@ -1,0 +1,31 @@
+function Wheel(ct,fn){
+this.count=ct
+this.isfunctioning=fn
+this.gofront=function(){
+console.log("moving front")
+}
+this.goback=function(){
+console.log("moving back")
+}
+}
+function Engine(sz,pow){
+this.size=sz
+this.power=pow
+this.start=function()
+{
+console.log("started")
+}
+this.stop=function(){
+console.log("stoped")
+}}
+Engine.prototype=new Wheel(2,true)
+function Car(id)
+{
+this.id=id
+this.driving=function(){
+console.log("driving")
+}
+}
+Car.prototype=new Engine(34,678);
+let c=new Car("Ap342")
+
